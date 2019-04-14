@@ -44,6 +44,9 @@ body {
         width:30px;
         margin:30px;
     }
+    footer {
+        max-width:10%;
+    }
     .active-page{
         border: 1px solid white;
     }
@@ -105,6 +108,10 @@ body {
         overflow:hidden;
         word-break: break-word;
     }
+    .kartica img:hover{
+        
+        box-shadow: 0 0 20px white;
+      }
 
     @font-face {
 font-family: "CustomFont";
@@ -233,5 +240,18 @@ table{
 }
 td {
     text-align: center;
+}
+
+article:hover{
+    font-weight: bold;
+}
+article h3:hover{
+    text-shadow: 1px 1px 1px black, 0 0 1px blue, 0 0 1px darkblue;
+}
+ .naslovsekcije:hover{
+    text-shadow: 1px 1px 1px black, 0 0 1px blue, 0 0 1px darkblue;
+}
+.gornji:hover{
+    text-shadow: 1px 1px 1px black, 0 0 1px blue, 0 0 1px darkblue;
 }
 

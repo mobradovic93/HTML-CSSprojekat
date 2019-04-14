@@ -4,170 +4,282 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/stil.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
-    <style>
-        body {
-    background-image: url("slike/dark-honeycomb.png");
-    background-color: #cccccc;
-    }
-    .nav-link{
-        font-size:20px;
-        color: white;
-    }
-    img{
-        
-        height:200%;
-    }
-    .container{
-        margin-top:70px;
-        
-    }
-    h1{
-        text-align: center;
-        font-size: 50px;
-        font-family:CustomFont;
-    }
-    form label{
-        font-family:CustomFont;
-    }
-    form{
-        font-size: 30px;
-    }
-    #naslov{
-        background-color: rgb(0,114,188);
-    }
-    #naslov #prva{
-        width:60px;
-        float:left;
-    }
-    #naslov #druga{
-        width:60px;
-        float:right;
-    }
-    .navbar-nav > li{
-        padding-left:30px;
-        padding-right:30px;
-    }
-    .navbar {
-        background-color: rgb(0,114,188);
-    }
-    footer{
-        color:white;
-    }
-    footer img{
-        width:30px;
-        margin:30px;
-    }
-    .active-page{
-        border: 1px solid white;
-    }
 
-
-    @font-face {
-font-family: "CustomFont";
-src: url("notime.ttf");
-}
-
-    </style>
     
-<body>
-        
-
-<!-- POCETAK NAVIGATION BARA -->
-
-<nav class="navbar  navbar-expand-md  fixed-top">
-    <a class="navbar-brand" href="#"><img src="slike/logo.png" style="height:50px;"></a>
-    
-    
-
-    <!-- za male ekrane se automatski kreira kolapsirajuci navbar -->
-    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapseid">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="collapseid">
-
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active-page" href="O_meni.html">O meni</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Kontakt.html">Kontakt</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Projekti.html">Projekti</a>
-            </li>
-        </ul>
-    
-    </div>
-
-</nav>
-<div id="top">top</div>
-
-<div class='container bg-secondary mw-75 pt-4 text-white' style='height: 1100px;'>
-       
-    <div id="naslov"><h1 class="my-4"><img id="prva" src="slike/contact.ico">KONTAKT<img id="druga" src="slike/contact.ico"></h1></div>
-    <form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="ime">IME</label>
-                <input type="text" class="form-control" id="ime" placeholder="Unesite Vaše ime">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="prezime">PREZIME</label>
-                <input type="password" class="form-control" id="prezime" placeholder="Unesite Vaše prezime">
-            </div>
-        </div>
-        <div class="form-group">
-                <label for="email">EMAIL</label>
-                <input type="email" class="form-control" id="email" placeholder="Unesite Vašu email adresu">
-            </div>
-        <div class="form-group">
-            <label for="adresa">ADRESA</label>
-            <input type="text" class="form-control" id="adresa" placeholder="Unesite Vašu adresu">
-        </div>
-        
-        
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="grad">GRAD</label>
-                <input type="text" class="form-control" id="grad">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="drzava">DRŽAVA</label>
-                <select id="drzava" class="form-control">
-                    <option selected>Odaberite sa liste...</option>
-                    <option>Srbija</option>
-                    <option>Crna Gora</option>
-                    <option>Hrvatska</option>
-                    <option>BiH</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
+    <body>
+            <nav class="navbar navbar-expand-md fixed-top">
+                    <a class="navbar-brand" href="#"><img src="slike/logo.png" style="height:50px;"></a>
+                    
+                    
                 
-                <label for="textarea">UNESITE KOMENTAR</label>
-                <textarea rows="7" id="textarea" class="form-control mb-4" placeholder="Vaš komentar ovde..."></textarea>
-                       </div>
-        
-                       <div class="row my-3 ">
-                            <div class="col-md-4">
-                                <a class="d-block bg-info text-center text-light" href="javascript:history.back()"> Nazad </a>
-                            </div>
-                            <div class="col-md-4 offset-md-4">
-                                <a class="d-block bg-success text-center text-light" href="#"> Pošaljite </a>
-                            </div>
+                    <!-- za male ekrane se automatski kreira kolapsirajuci navbar -->
+                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapseid">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="collapseid">
+                
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">O meni</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Kontakt.html">Kontakt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active-page" href="Projekti.html">Projekti</a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                
+                </nav>
+                <div id="top">top</div>
+
+        <div id="cv">
+            <div class="gornji">
+                <div id="cvslika">
+                    <img src="slike/contact.ico" alt="cvslika" />
+                </div>
+                
+                <div id="ime">
+                    <h1>Miloš Obradović</h1>
+                    
+                </div>
+                
+                <div id="kontaktpodaci">
+                    <ul>
+                        <li><img src="slike/cv3.png">email: <a href="mailto:milos.obradovic93@gmail.com" target="_blank">milos.obradovic93@gmail.com</a></li>
+                        <li><img src="slike/cv1.png">adresa: Ulica broj 1</li>
+                        <li><img src="slike/cv2.png">m: +381 645555555</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <div id="glavnideo">
+               
+
+                    <div class="clear"></div>
+               
+                
+                
+                <section>
+                    <div class="naslovsekcije">
+                        <h1>Radno iskustvo</h1>
+                    </div>
+                    
+                    <div class="sadrzajsekcije">
+                        <article>
+                            <h3>Sales Data Analyst</h3>
+                            <h4>Orion Telekom d.o.o</h4>
+                            <p class="oddo">July 2018 - Present</p>
+                            <ul>
+                                <li>Collection and integration of data, identification of trends and deviations of the key indicators over time, comparative analysis in order to draw insights from the organization's data to help management make decisions and set goals</li>
+                                <li>
+                                        Modeling business data structures in collaboration with system developers and users: determining and analyzing commonly used queries and reports, research of business problems and creation of models for analysis
+                                </li>
+                                <li>
+                                        Identification of reporting and data analysis of sales and marketing needs, reporting models automation: conceptualizing, defining and delivering new reports, improving and adapting existing ones
+                                </li>
+                                <li>
+                                        Close collaboration with regional sales directors and managers in order to build and refine reporting system and track sales performance (acquisition, targets, sales channels performance, ARPU calculations)
+                                </li>
+                            </ul>
+                            <h3>Business & Finance Analyst</h3>
+                            <h4>QFS d.o.o - Financial and Business Advisory </h4>
+                            <p class="oddo">April 2017 - July 2018</p>
+                            <ul>
+                                <li>
+                                        Research and data processing for the purpose of analysis, reporting and other documents made in scope of business and financial reporting
+                                </li>
+                                <li>
+                                        Preparation of presentations, investment profiles, basic financial analysis, information memoranda, business plans
+                                </li>
+                                <li>
+                                        Research and processing of data in scope of enterprise valuations, profitability calculations, investment and strategic solutions and operating proposals
+                                </li>
+                                <li>
+                                        Research and data processing for market analysis purposes
+                                </li>
+
+
+                            </ul>
+                            
+                            <h4>Internship program in "Telekom Srbija"</h4>
+                            <p class="oddo">April 2016 - May 2016</p>
+                            <ul>
+                                <li>
+                                        Sector for alternative sale channels to small and medium enterprises
+                                </li>
+                            </ul>
+
+                        </article>
+                        
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                        
+                <section>
+                    <div class="naslovsekcije">
+                        <h1>Education and training</h1>
+                    </div>
+                    
+                    <div class="sadrzajsekcije">
+                        <article>
+                            <h3>Faculty of Organizational Sciences - Master studies</h3>
+                            <p class="oddo">Oct 2016 - Oct 2017</p>
+                            <ul>
+                                <li>
+                                        Marketing engineering and communication <span id="prosek">GPA (9,33)</span>  
+                                </li>
+                            </ul>
+                            <h3>Faculty of Organizational Sciences - Undergraduate studies</h3>
+                            <p class="oddo">Oct 2012 - Sep 2016</p>
+                            <ul>
+                                <li>
+                                        Management and Organization  <span id="prosek">GPA (8,79)</span>  
+                                </li>
+                            </ul>
+                            <h3>High School: Zemunska gimnazija, Zemun</h3>
+                            <p class="oddo">Sep 2008 - Jun 2012</p>
+                          
+                        </article>
+                        
+                    </div>
+                    
+                    <div class="clear"></div>
+                </section>
+                <section>
+                        <div class="naslovsekcije">
+                            <h1>Personal skills</h1>
                         </div>
-    </form>
-</div>
+                        
+                        <div class="sadrzajsekcije">
+                            <article>
+                                <h3>Mother tongue</h3>
+                                <ul>
+                                    <li>
+                                        Serbian
+                                    </li>
+                                </ul>
+                                <h3>Other languages</h3>
+                                <table class="table table-bordered">
+                                        <thead>
+                                          <tr id="tabela1">
+                                            <th scope="col"></th>
+                                            <th scope="col" colspan="2">Understanding</th>
+                                            <th scope="col" colspan="2">Speaking</th>
+                                            <th scope="col">Writing</th>
+                                          </tr>
+                                          <tr id="tabela2">
+                                            <th scope="col"></th>
+                                            <th scope="col" class="align-middle">Listening</th>
+                                            <th scope="col" class="align-middle">Reading</th>
+                                            <th scope="col" class="align-middle">Spoken interaction</th>
+                                            <th scope="col" class="align-middle">Spoken production</th>
+                                            <th></th>
+                                          </tr>
+
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row" rowspan="2" class="align-middle">English</th>
+                                            <td>C1</td>
+                                            <td>C1</td>
+                                            <td>C1</td>
+                                            <td>C1</td>
+                                            <td>C1</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="5" class="align-middle">Full professional working proficiency</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-middle">German</th>
+                                            <td>A1</td>
+                                            <td>A1</td>
+                                            <td>A1</td>
+                                            <td>A1</td>
+                                            <td>A1</td>
+                                          </tr>
+
+                                        </tbody>
+                                      </table>
+                                      <h3>Communication skills</h3>
+                                      <ul>
+                                          <li>
+                                                professional verbal and written communication skills gained through individual and group work on various projects, presentations and case studies
+                                          </li>
+                                          <li>
+                                                motivation for both independent and team work, as well as attainment of new skills, knowledge and business experiences
+                                          </li>
+                                      </ul>
+                                      <h3>Computer skills</h3>
+                                      <ul>
+                                          <li>
+                                                MS Office – advanced level (building business, financial and sales analytics models in Excel; business plans, daily/weekly/monthly reports, investment decks etc. in Powerpoint and Word)
+                                          </li>
+                                          <li>
+                                                Tableau – Data analysis and visual presentation of practical examples
+                                          </li>
+                                          <li>
+                                                Orange, Rapidminer, IBM SPSS
+                                          </li>
+                                          <li>
+                                                SQL basic level – queries and reporting on smaller databases
+                                          </li>
+                                          <li>
+                                                Python basic level 
+                                          </li>
+                                      </ul>
+                                
+                                      
+                                        
+    
+                            </article>
+                        
+                        </div>
+                        
+                        <div class="clear"></div>
+                       
+                    </section>
+                    <section>
+                            <div class="naslovsekcije">
+                                <h1>Additional information</h1>
+                            </div>
+                            
+                            <div class="sadrzajsekcije">
+                                <article>
+                                    <ul>
+                                        <li>
+                                                Interested in expanding existing and acquiring new skills and knowledge in data analysis, sales, marketing, finance, IT and business development in practical environment.
+                                        </li>
+                                        <li>
+                                                Looking for a role that represents a challenging, fulfilling and rewarding opportunity for long-term career development, with constant possibility to take on more complex and advanced tasks over time.
+                                        </li>
+                                    </ul>
+
+                                </article>
+                            
+                            </div>
+                            
+                            <div class="clear"></div>
+                           
+                        </section>
 
 
-</body>
+                
+            </div>
+        </div>
+        
+        </body>
 <footer class="page-footer font-white pt-4 fixed-bottom">
         <a href="#top"><img src="slike/back-to-top-button.png"></a>
         

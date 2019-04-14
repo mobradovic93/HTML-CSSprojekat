@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+#prvi{
+    height:1px;
+    width:1px;
+    border-left:3px solid #000;
+    
+    
+
+    animation:         increase 3s; 
+    animation-fill-mode: forwards;
+    
+  }
+  #drugi{
+    height:0px;
+    width:1px;
+    border-bottom:3px solid #000;
+    
+
+    animation:         increase2 3s; 
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+  }
+  
+  @keyframes increase {
+      100% {
+          
+          height:300px;
+      }
+  }
+  @keyframes increase2 {
+      100% {
+          
+        width: 300px;
+      }
+  }
+</style>
+<body>
+    <div id="prvi"></div>
+    <div id="drugi"></div>
+</body>
+</html>

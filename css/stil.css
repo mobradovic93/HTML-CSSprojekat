@@ -7,7 +7,7 @@ body {
         color: white;
     }
 
-    h1{
+    #naslov h1{
         text-align: center;
         font-size: 50px;
         font-family:CustomFont;
@@ -108,4 +108,126 @@ body {
     @font-face {
 font-family: "CustomFont";
 src: url("notime.ttf");
+}
+/*cv deo*/
+
+.clear {clear: both;}
+
+
+#cv {
+	width: 90%;
+	max-width: 900px;
+	background: #f3f3f3;
+	margin: 70px auto;
+}
+
+.gornji {
+	padding: 30px ;
+	border-bottom: 2px solid rgb(0,114,188);
+	background: #ededed;
+}
+.gornji img{
+    width:15px;
+    margin-right:5px;
+}
+
+#glavnideo {
+	padding: 0 40px;
+}
+
+#cvslika {
+	width: 12.5%;
+	float: left;
+	margin-right: 30px;
+}
+
+#cvslika img {
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+}
+
+#ime {
+    float: left;
+    padding-top:20px;
+}
+
+#kontaktpodaci {
+    float: right;
+    padding-top:20px;
+}
+
+#kontaktpodaci ul {
+	list-style-type: none;
+	font-size: 0.9em;
+	margin-top: 2px;
+}
+
+
+#kontaktpodaci ul li a:hover { 
+	color: #cf8a05;
+}
+
+
+section {
+	border-bottom: 1px solid rgb(0,114,188);
+	padding: 20px 0 0;
+}
+
+.naslovsekcije {
+	float: left;
+	width: 10%;
+}
+
+.sadrzajsekcije {
+	float: right;
+	width: 80%;
+}
+
+.naslovsekcije h1 {
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-style: italic;
+	font-size: 1.5em;
+	color: rgb(0,114,188);
+}
+
+.sadrzajsekcije h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:25px;
+	
+    margin-bottom: -2px;
+    color: rgb(0,114,188);
+}
+.sadrzajsekcije h4{
+    font-size: 20px;
+}
+.sadrzajsekcije ul{
+    text-align: justify;
+    padding-left:15px;
+}
+
+.oddo {
+	font-size: 15px;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+.sadrzajsekcije span{
+    font-style: italic;
+    font-size: 12px;
+}
+table{
+    margin-top:10px;
+}
+#tabela1{
+    background-color: #65a1d3b4;
+    text-align: center;
+
+}
+#tabela2{
+ 
+    text-align: center;
+}
+td {
+    text-align: center;
 }

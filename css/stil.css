@@ -103,7 +103,7 @@ body {
         margin:30px;
         height:300px;
         overflow:hidden;
-        word-break: break-all;
+        word-break: break-word;
     }
 
     @font-face {
@@ -179,7 +179,7 @@ section {
 	float: left;
     width: 20%;
     overflow:hidden;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .sadrzajsekcije {

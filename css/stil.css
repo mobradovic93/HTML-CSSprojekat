@@ -15,11 +15,17 @@ body {
     form label{
         font-family:CustomFont;
     }
+    form label:hover{
+        text-shadow: 2px 2px 2px red;
+    }
     form{
         font-size: 30px;
     }
     #naslov{
         background-color: rgb(0,114,188);
+    }
+    #naslov:hover{
+        text-shadow: 2px 2px 2px red;
     }
     #naslov #prva{
         width:60px;
@@ -32,6 +38,9 @@ body {
     .navbar-nav > li{
         padding-left:30px;
         padding-right:30px;
+    }
+    .navbar li:hover{
+        font-weight: bold; 
     }
     .navbar {
         background-color: rgb(0,114,188);
